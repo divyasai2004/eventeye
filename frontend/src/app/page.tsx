@@ -324,62 +324,56 @@ export default function Home() {
         {/* Enhanced Description - Direct on page without container layer */}
         <div className="relative mb-12 max-w-4xl">
           {/* Main tagline with enhanced styling */}
-          <div className="relative group mb-8">
-            <p className="text-xl sm:text-2xl lg:text-3xl leading-relaxed font-bold bg-gradient-to-r from-slate-800 via-blue-800 to-purple-800 bg-clip-text text-transparent text-center">
-              Connect student clubs and sponsors for smarter, easier event partnerships.
-              {/* <span className="block mt-2 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent font-black">
-                smarter, easier event partnerships.
-              </span> */}
+          {/* <div className="relative group mb-1 sm:mb-8">
+            <p className="text-center text-sm sm:text-2xl md:text-3xl lg:text-4xl leading-snug font-bold bg-gradient-to-r from-slate-900 via-blue-900 to-purple-900 bg-clip-text text-transparent tracking-wide drop-shadow-sm max-w-[90vw] sm:max-w-2xl mx-auto break-words">
+              Connect student clubs and sponsors for smarter, easier event partnerships
             </p>
-          </div>
-          
-          {/* Revolutionary action words section - always horizontal, scrollable on mobile */}
-          <div className="relative group mb-8 sm:mb-12">
-            <div className="flex flex-row items-center justify-center gap-1 sm:gap-6 mb-6 sm:mb-8 w-full overflow-x-auto whitespace-nowrap no-scrollbar py-2">
-              {/* Discover - Enhanced */}
-              <div className="group/discover relative min-w-[120px] max-w-xs mx-1 flex items-center justify-center">
+          </div> */}
+          {/* Discover-Match-Collaborate section - ultra compact and stable on mobile */}
+          <div className="relative group mb-1 sm:mb-8">
+            <div className="flex flex-row items-center justify-center gap-0.5 sm:gap-6 mb-1 sm:mb-8 w-full overflow-x-auto whitespace-nowrap no-scrollbar py-1 flex-nowrap max-w-full">
+              {/* Discover */}
+              <div className="group/discover relative min-w-[90px] sm:min-w-[120px] md:min-w-[140px] max-w-xs mx-0.5 flex items-center justify-center">
                 <div className="relative w-full flex items-center justify-center">
-                  <div className="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full text-white font-black text-base sm:text-xl shadow-lg flex items-center justify-center">
+                  <div className="px-3 py-1.5 sm:px-6 sm:py-3 md:px-8 md:py-4 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full text-white font-bold text-sm sm:text-lg md:text-xl shadow flex items-center justify-center">
                     Discover
                   </div>
                 </div>
               </div>
-              {/* Connector - always visible */}
-              <div className="flex items-center gap-1 min-w-[40px] mx-1">
-                <div className="w-2 h-2 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full animate-pulse shadow-lg"></div>
-                <div className="w-4 sm:w-8 h-1 bg-gradient-to-r from-purple-400 via-pink-400 to-rose-400 rounded-full animate-pulse shadow-md" style={{animationDelay: '0.3s'}}></div>
-                <div className="w-2 h-2 bg-gradient-to-br from-pink-400 to-rose-500 rounded-full animate-pulse shadow-lg" style={{animationDelay: '0.6s'}}></div>
+              {/* Connector */}
+              <div className="flex items-center gap-0.5 sm:gap-2 min-w-[16px] sm:min-w-[32px] mx-0.5">
+                <div className="w-1 h-1 sm:w-2 sm:h-2 md:w-3 md:h-3 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full animate-pulse shadow-lg"></div>
+                <div className="w-2 sm:w-6 md:w-10 h-0.5 sm:h-1 md:h-1.5 bg-gradient-to-r from-purple-400 via-pink-400 to-rose-400 rounded-full animate-pulse shadow-md" style={{animationDelay: '0.3s'}}></div>
+                <div className="w-1 h-1 sm:w-2 sm:h-2 md:w-3 md:h-3 bg-gradient-to-br from-pink-400 to-rose-500 rounded-full animate-pulse shadow-lg" style={{animationDelay: '0.6s'}}></div>
               </div>
-              {/* Match - Enhanced */}
-              <div className="group/match relative min-w-[120px] max-w-xs mx-1 flex items-center justify-center">
+              {/* Match */}
+              <div className="group/match relative min-w-[90px] sm:min-w-[120px] md:min-w-[140px] max-w-xs mx-0.5 flex items-center justify-center">
                 <div className="relative w-full flex items-center justify-center">
-                  <div className="px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full text-white font-black text-base sm:text-xl shadow-lg flex items-center justify-center">
+                  <div className="px-3 py-1.5 sm:px-6 sm:py-3 md:px-8 md:py-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full text-white font-bold text-sm sm:text-lg md:text-xl shadow flex items-center justify-center">
                     Match
                   </div>
                 </div>
               </div>
-              {/* Connector - always visible */}
-              <div className="flex items-center gap-1 min-w-[40px] mx-1">
-                <div className="w-2 h-2 bg-gradient-to-br from-pink-400 to-indigo-500 rounded-full animate-pulse shadow-lg" style={{animationDelay: '0.8s'}}></div>
-                <div className="w-4 sm:w-8 h-1 bg-gradient-to-r from-pink-400 via-indigo-400 to-violet-400 rounded-full animate-pulse shadow-md" style={{animationDelay: '1.1s'}}></div>
-                <div className="w-2 h-2 bg-gradient-to-br from-indigo-400 to-violet-500 rounded-full animate-pulse shadow-lg" style={{animationDelay: '1.4s'}}></div>
+              {/* Connector */}
+              <div className="flex items-center gap-0.5 sm:gap-2 min-w-[16px] sm:min-w-[32px] mx-0.5">
+                <div className="w-1 h-1 sm:w-2 sm:h-2 md:w-3 md:h-3 bg-gradient-to-br from-pink-400 to-indigo-500 rounded-full animate-pulse shadow-lg" style={{animationDelay: '0.8s'}}></div>
+                <div className="w-2 sm:w-6 md:w-10 h-0.5 sm:h-1 md:h-1.5 bg-gradient-to-r from-pink-400 via-indigo-400 to-violet-400 rounded-full animate-pulse shadow-md" style={{animationDelay: '1.1s'}}></div>
+                <div className="w-1 h-1 sm:w-2 sm:h-2 md:w-3 md:h-3 bg-gradient-to-br from-indigo-400 to-violet-500 rounded-full animate-pulse shadow-lg" style={{animationDelay: '1.4s'}}></div>
               </div>
-              {/* Collaborate - Enhanced */}
-              <div className="group/collaborate relative min-w-[120px] max-w-xs mx-1 flex items-center justify-center">
+              {/* Collaborate */}
+              <div className="group/collaborate relative min-w-[90px] sm:min-w-[120px] md:min-w-[140px] max-w-xs mx-0.5 flex items-center justify-center">
                 <div className="relative w-full flex items-center justify-center">
-                  <div className="px-6 py-3 bg-gradient-to-r from-indigo-500 to-violet-500 rounded-full text-white font-black text-base sm:text-xl shadow-lg flex items-center justify-center">
-                    Collaborate
+                  <div className="px-3 py-1.5 sm:px-6 sm:py-3 md:px-8 md:py-4 bg-gradient-to-r from-indigo-500 to-violet-500 rounded-full text-white font-bold text-sm sm:text-lg md:text-xl shadow flex items-center justify-center">
+                    Celebrate
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          {/* Enhanced closing line - directly on page */}
-          <div className="relative text-center">
-            <p className="text-lg sm:text-xl lg:text-2xl font-bold bg-gradient-to-r from-slate-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
-              with the right brands or clubs for your next big event
-              <span className="text-2xl ml-2"></span>
+          {/* Enhanced closing line */}
+          <div className="relative text-center px-2 mt-1">
+            <p className="text-center text-sm sm:text-xl md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-slate-800 via-indigo-700 to-purple-800 bg-clip-text text-transparent tracking-wide drop-shadow-sm max-w-[90vw] sm:max-w-2xl mx-auto leading-snug">
+The Link Between Brands and Campus Buzz             <span className="text-xl sm:text-3xl ml-1 sm:ml-3"></span>
             </p>
           </div>
         </div>
