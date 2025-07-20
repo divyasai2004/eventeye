@@ -55,10 +55,10 @@
 
 ### 1. Clone the Repo
 
-bash
+```bash
 git clone https://github.com/divyasai2004/eventeye.git
 cd eventeye/event1
-
+```
 
 ### 2. Setup Environment Variables
 
@@ -114,7 +114,7 @@ You can use these demo accounts for instant access and testing:
 
 ---
 
-## 🎯 How It Works
+## 🔹 How It Works
 
 1. **Register** as a Student Club or Sponsor
 2. **Complete your profile** with detailed event or sponsor info
@@ -126,7 +126,7 @@ You can use these demo accounts for instant access and testing:
 
 ---
 
-## 📊 Analytics & Insights
+## 🔹 Analytics & Insights
 
 - **Bar and Pie charts** for matches by industry, theme, and audience
 - **Live updates** as new matches are created
@@ -149,7 +149,7 @@ You can use these demo accounts for instant access and testing:
 
 ---
 
-## 🏆 Why This Project Stands Out
+## 🔹 Why This Project Stands Out
 
 - **Full-stack, production-ready** implementation
 - **Advanced features** beyond the basics
@@ -166,32 +166,17 @@ You can use these demo accounts for instant access and testing:
 
 ---
 
-##  Credits
-
-- **Built by:** [Divyasai Ganti](https://www.linkedin.com/in/divyasai-ganti-44a49b319/)
-- **Portfolio:** [myportfolio-zeta-six-93.vercel.app](https://myportfolio-zeta-six-93.vercel.app/)
-- **Twitter:** [@DivyasaiGa46478](https://x.com/DivyasaiGa46478)
-
----
-
 ##  Contact
 
-For questions, feedback, or partnership inquiries:
-- Email: hello@sponsorsync.com
-
----
-
-##  License
-
-This project is for hackathon/demo purposes.  
-Contact the author for production/commercial use.
+For questions, feedback, or inquiries:
+- Email: divyasaiganti@gmail.com
+- **Portfolio:** [myportfolio-zeta-six-93.vercel.app](https://myportfolio-zeta-six-93.vercel.app/)
 
 ---
 
 **Good luck, and thank you for checking out SponsorSync! 🚀**
 
----
 
 > _“Where student events meet their perfect sponsors.”_
 
----
+
