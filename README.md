@@ -7,7 +7,7 @@
 
 
 
-## 🚀 Overview
+## Overview
 
 **SponsorSync** is a smart matchmaking platform that connects student clubs with the perfect sponsors for their events. Built for the EventEye Hackathon, SponsorSync solves the real-world problem of student organizers struggling to find the right sponsors, and sponsors failing to discover high-engagement student events.
 
@@ -20,13 +20,13 @@
 
 ## 🌟 Live Demo
 
-- **Frontend:** [https://eventeye-rouge.vercel.app/](https://eventeye-rouge.vercel.app/)
-- **Backend API:** [https://eventeye.onrender.com/](https://eventeye.onrender.com/)
+  [https://eventeye-rouge.vercel.app/](https://eventeye-rouge.vercel.app/)
+
 
 ---
 
 
-## 🧩 Features
+## 🔹 Features
 
 - **Student Club & Sponsor Registration**
 - **Detailed Event & Sponsor Profiles**
@@ -42,7 +42,7 @@
 
 ---
 
-## 🛠️ Tech Stack
+## 🔹 Tech Stack
 
 - **Frontend:** Next.js 13 (App Router), React, Tailwind CSS, Chart.js, Heroicons
 - **Backend:** Node.js, Express, MongoDB (Mongoose), JWT Auth, CORS
@@ -51,7 +51,7 @@
 
 ---
 
-## 🏁 Getting Started
+## 🔹 Getting Started
 
 ### 1. Clone the Repo
 
@@ -62,44 +62,43 @@ cd eventeye/event1
 
 ### 2. Setup Environment Variables
 
-#### Backend (event1/backend/.env)
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_jwt_secret
-OPENAI_API_KEY=your_openai_key
-PORT=5000
-
-
-#### Frontend (event1/frontend/.env.local)
-NEXT_PUBLIC_API_URL=https://eventeye.onrender.com
+| 🔧 Location                      | Variable Name         | Value / Description           |
+|----------------------------------|------------------------|-------------------------------|
+| `event1/backend/.env`           | `MONGO_URI`           | your_mongodb_uri              |
+|                                  | `JWT_SECRET`          | your_jwt_secret               |
+|                                  | `OPENAI_API_KEY`      | your_openai_key               |
+|                                  | `PORT`                | 5000                          |
+| `event1/frontend/.env.local`    | `NEXT_PUBLIC_API_URL` | https://eventeye.onrender.com |
 
 
 ### 3. Install Dependencies
 
-bash
-# Backend
+```bash
+# Install backend dependencies
 cd backend
 npm install
 
-# Frontend
+# Install frontend dependencies
 cd ../frontend
 npm install
+```
 
 
 ### 4. Run Locally
 
-bash
-# Backend
+```bash
+# Start the backend server
 cd backend
 npm start
 
-# Frontend
+# Start the frontend development server
 cd ../frontend
 npm run dev
-
+```
 
 ---
 
-## 🧪 Demo Accounts
+## 🔹 Demo Accounts
 
 You can use these demo accounts for instant access and testing:
 
@@ -135,7 +134,7 @@ You can use these demo accounts for instant access and testing:
 
 ---
 
-## 🤖 AI Proposal Generation
+## 🔹 AI Proposal Generation
 
 - Student clubs can generate a professional sponsorship proposal for their event with one click, powered by OpenAI GPT-3.5.
 
@@ -167,7 +166,7 @@ You can use these demo accounts for instant access and testing:
 
 ---
 
-## 🙌 Credits
+##  Credits
 
 - **Built by:** [Divyasai Ganti](https://www.linkedin.com/in/divyasai-ganti-44a49b319/)
 - **Portfolio:** [myportfolio-zeta-six-93.vercel.app](https://myportfolio-zeta-six-93.vercel.app/)
@@ -175,14 +174,14 @@ You can use these demo accounts for instant access and testing:
 
 ---
 
-## 📬 Contact
+##  Contact
 
 For questions, feedback, or partnership inquiries:
 - Email: hello@sponsorsync.com
 
 ---
 
-## 📢 License
+##  License
 
 This project is for hackathon/demo purposes.  
 Contact the author for production/commercial use.
