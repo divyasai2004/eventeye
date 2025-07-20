@@ -123,14 +123,14 @@ router.get('/analytics', auth, async (req, res) => {
     const byTheme = {};
     const byAudience = {};
     if (req.user.role === 'sponsor') {
-      matches.forEach(m => {
-        const theme = m.studentClubProfile?.theme || 'Other';
-        byTheme[theme] = (byTheme[theme] || 0) + 1;
-      });
-      matches.forEach(m => {
-        const audience = m.studentClubProfile?.targetAudience || 'Other';
-        byAudience[audience] = (byAudience[audience] || 0) + 1;
-      });
+    matches.forEach(m => {
+      const theme = m.studentClubProfile?.theme || 'Other';
+      byTheme[theme] = (byTheme[theme] || 0) + 1;
+    });
+    matches.forEach(m => {
+      const audience = m.studentClubProfile?.targetAudience || 'Other';
+      byAudience[audience] = (byAudience[audience] || 0) + 1;
+    });
     } else {
       matches.forEach(m => {
         const industry = m.sponsorProfile?.industry || 'Other';

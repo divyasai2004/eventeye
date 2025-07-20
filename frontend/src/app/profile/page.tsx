@@ -118,7 +118,7 @@ export default function Profile() {
           <div className="flex flex-col items-center text-center mb-10">
             <div className="relative mb-6">
               <div className="h-24 w-24 rounded-full bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center text-white font-bold text-3xl shadow-lg shadow-indigo-200/50 ring-4 ring-white/50">
-                {avatarLetter}
+            {avatarLetter}
               </div>
               <div className="absolute -bottom-1 -right-1 h-8 w-8 bg-emerald-500 rounded-full border-4 border-white shadow-md"></div>
             </div>
@@ -131,7 +131,7 @@ export default function Profile() {
               <div className="h-2 w-2 bg-indigo-500 rounded-full mr-2 animate-pulse"></div>
               <span className="text-lg font-semibold text-indigo-700">
                 {role === "studentClub" ? "Student Club Profile" : "Sponsor Profile"}
-              </span>
+          </span>
             </div>
             
             {email && (
@@ -157,7 +157,7 @@ export default function Profile() {
                 <div className="h-5 w-5 text-emerald-500 mr-3">✅</div>
                 <p className="text-emerald-700 font-medium">{success}</p>
               </div>
-            </div>
+        </div>
           )}
 
           {/* Main Content */}
@@ -183,12 +183,12 @@ export default function Profile() {
                       {field.required && <span className="text-red-500 ml-1">*</span>}
                     </label>
                     <div className="relative">
-                      <input
+                    <input
                         id={field.name}
                         name={field.name}
                         type={field.type || "text"}
                         value={profile[field.name] || ""}
-                        onChange={handleChange}
+                      onChange={handleChange}
                         required={field.required}
                         className="w-full px-4 py-3.5 bg-white/70 border-2 border-slate-200/60 rounded-xl 
                                  focus:outline-none focus:ring-4 focus:ring-indigo-100/80 focus:border-indigo-400
@@ -234,31 +234,31 @@ export default function Profile() {
                     )}
                   </span>
                   <div className="absolute inset-0 bg-gradient-to-r from-indigo-700 via-purple-700 to-pink-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </button>
+              </button>
               </div>
             </form>
           )}
 
           {/* AI Proposal Button - Student Clubs Only */}
-          {role === "studentClub" && (
+        {role === "studentClub" && (
             <div className="mt-8 pt-6 border-t border-slate-200/60">
-              <button
-                onClick={async () => {
+          <button
+            onClick={async () => {
                   const res = await fetch('https://eventeye.onrender.com/api/profile/generate-proposal', {
-                    method: 'POST',
-                    headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
-                  });
-                  if (res.ok) {
-                    const blob = await res.blob();
-                    const url = window.URL.createObjectURL(blob);
-                    const a = document.createElement('a');
-                    a.href = url;
-                    a.download = 'proposal.pdf';
-                    a.click();
-                  } else {
-                    alert('Failed to generate proposal');
-                  }
-                }}
+                method: 'POST',
+                headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
+              });
+              if (res.ok) {
+                const blob = await res.blob();
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'proposal.pdf';
+                a.click();
+              } else {
+                alert('Failed to generate proposal');
+              }
+            }}
                 className="w-full px-6 py-3.5 bg-gradient-to-r from-emerald-500 to-teal-600
                          text-white font-semibold text-base rounded-xl
                          hover:from-emerald-600 hover:to-teal-700
@@ -270,8 +270,8 @@ export default function Profile() {
                 <svg className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
-                Generate AI Proposal PDF
-              </button>
+            Generate AI Proposal PDF
+          </button>
             </div>
           )}
 
@@ -296,7 +296,7 @@ export default function Profile() {
       </div>
     </div>
   );
-}
+} 
 
 
 

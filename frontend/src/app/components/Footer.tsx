@@ -20,10 +20,10 @@ export default function Footer() {
     <footer className="bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-white border-t border-purple-800/30">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left md:text-left">
           
           {/* Company Info */}
-          <div className="space-y-4 flex flex-col items-center md:items-start">
+          <div className="space-y-4 flex flex-col items-start md:items-start">
             <div className="flex items-center space-x-3">
               <Image 
                 src="/favicon.ico" 
@@ -77,7 +77,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="space-y-4 flex flex-col items-center md:items-start">
+          <div className="space-y-4 flex flex-col items-start md:items-start">
             <h4 className="text-lg font-bold text-white relative">
               Quick Links
               <div className="absolute -bottom-2 left-0 w-8 h-0.5 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full"></div>
@@ -127,7 +127,7 @@ export default function Footer() {
           </div>
 
           {/* For Users */}
-          <div className="space-y-4 flex flex-col items-center md:items-start">
+          <div className="space-y-4 flex flex-col items-start md:items-start">
             <h4 className="text-lg font-bold text-white relative">
               Get Started
               <div className="absolute -bottom-2 left-0 w-8 h-0.5 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full"></div>
@@ -169,7 +169,7 @@ export default function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div className="space-y-4 flex flex-col items-center md:items-start">
+          <div className="space-y-4 flex flex-col items-start md:items-start">
             <h4 className="text-lg font-bold text-white relative">
               Contact
               <div className="absolute -bottom-2 left-0 w-8 h-0.5 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full"></div>

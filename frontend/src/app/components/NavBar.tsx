@@ -31,7 +31,7 @@ export default function NavBar() {
           </div>
           <span className="text-2xl font-bold bg-gradient-to-r from-slate-800 via-purple-800 to-slate-900 bg-clip-text text-transparent tracking-tight">
             SponsorSync
-          </span>
+        </span>
         </div>
 
         {/* Desktop Navigation */}
@@ -92,7 +92,7 @@ export default function NavBar() {
               Logout
             </div>
           </button>
-        </div>
+      </div>
 
         {/* Mobile Menu Button */}
         <button 
@@ -206,7 +206,7 @@ export default function NavBar() {
                   <ArrowRightOnRectangleIcon className="h-6 w-6" />
                 </div>
                 <span className="text-lg text-red-700 font-semibold group-hover:text-red-800 transition-colors duration-200">Logout</span>
-              </button>
+            </button>
             </div>
           </div>
         </div>
@@ -253,7 +253,7 @@ export default function NavBar() {
       `}</style>
     </nav>
   );
-}
+} 
 
 
 

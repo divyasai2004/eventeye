@@ -128,16 +128,16 @@ export default function Matches() {
               </div>
             </div>
             
-            {role === "sponsor" && (
-              <button
-                onClick={createDummyMatch}
+        {role === "sponsor" && (
+          <button
+            onClick={createDummyMatch}
                 disabled={loading}
                 className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl hover:from-blue-600 hover:to-indigo-700 transform hover:-translate-y-0.5 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
-              >
+          >
                 <PlusIcon className="h-5 w-5" />
                 Create Test Match
-              </button>
-            )}
+          </button>
+        )}
           </div>
         </div>
 
@@ -146,7 +146,7 @@ export default function Matches() {
           <div className="flex items-center gap-3 mb-4">
             <FunnelIcon className="h-5 w-5 text-gray-600" />
             <h3 className="text-lg font-semibold text-gray-800">Filters</h3>
-          </div>
+        </div>
           
           <div className="flex flex-wrap gap-4 mb-4">
             <div className="flex flex-col gap-2">
@@ -156,9 +156,9 @@ export default function Matches() {
                 onChange={e => setIndustry(e.target.value)} 
                 className="px-4 py-2 border border-gray-200 rounded-xl bg-gray-50 hover:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent font-medium text-gray-700 transition-colors"
               >
-                {INDUSTRY_OPTIONS.map(opt => <option key={opt} value={opt}>{opt}</option>)}
-              </select>
-            </div>
+              {INDUSTRY_OPTIONS.map(opt => <option key={opt} value={opt}>{opt}</option>)}
+            </select>
+          </div>
             
             <div className="flex flex-col gap-2">
               <label className="text-sm font-medium text-gray-700">Audience</label>
@@ -167,10 +167,10 @@ export default function Matches() {
                 onChange={e => setAudience(e.target.value)} 
                 className="px-4 py-2 border border-gray-200 rounded-xl bg-gray-50 hover:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent font-medium text-gray-700 transition-colors"
               >
-                {AUDIENCE_OPTIONS.map(opt => <option key={opt} value={opt}>{opt}</option>)}
-              </select>
-            </div>
+              {AUDIENCE_OPTIONS.map(opt => <option key={opt} value={opt}>{opt}</option>)}
+            </select>
           </div>
+        </div>
 
           {/* Active Filters */}
           {(industry !== "All" || audience !== "All") && (
@@ -248,12 +248,12 @@ export default function Matches() {
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {matches.map((match, idx) => {
-                  const other = role === "studentClub" ? match.sponsor : match.studentClub;
+              {matches.map((match, idx) => {
+                const other = role === "studentClub" ? match.sponsor : match.studentClub;
                   const avatarLetter = other?.email ? other.email[0].toUpperCase() : '?';
                   const matchPercent = match.matchPercent || 0;
                   
-                  return (
+                return (
                     <div 
                       key={match._id || idx}
                       className="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-gray-300 transition-all duration-300 relative group"
@@ -267,7 +267,7 @@ export default function Matches() {
                       <div className="flex items-center gap-4 mb-4">
                         <div className="relative">
                           <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 text-white font-bold text-lg shadow-sm">
-                            {avatarLetter}
+                        {avatarLetter}
                           </div>
                           <div className="absolute -bottom-1 -right-1 h-4 w-4 bg-green-400 rounded-full border-2 border-white"></div>
                         </div>
@@ -283,37 +283,37 @@ export default function Matches() {
                       <div className="space-y-3">
                         <div className="flex items-center justify-between">
                           <span className="text-sm font-semibold text-gray-700">Status:</span>
-                        </div>
+                    </div>
                         
-                        {role === "sponsor" ? (
-                          <select
-                            value={match.stage || 'New'}
-                            onChange={async e => {
-                              const newStage = e.target.value;
-                              setLoading(true);
-                              setError("");
-                              try {
-                                const token = localStorage.getItem("token");
+                      {role === "sponsor" ? (
+                        <select
+                          value={match.stage || 'New'}
+                          onChange={async e => {
+                            const newStage = e.target.value;
+                            setLoading(true);
+                            setError("");
+                            try {
+                              const token = localStorage.getItem("token");
                                 const res = await fetch(`https://eventeye.onrender.com/api/matches/${match._id}/stage`, {
-                                  method: "PATCH",
-                                  headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
-                                  body: JSON.stringify({ stage: newStage })
-                                });
-                                if (!res.ok) throw new Error("Failed to update stage");
-                                // Reload matches
-                                router.refresh();
+                                method: "PATCH",
+                                headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+                                body: JSON.stringify({ stage: newStage })
+                              });
+                              if (!res.ok) throw new Error("Failed to update stage");
+                              // Reload matches
+                              router.refresh();
                               } catch (err) {
-                                setError("Failed to update stage");
-                              } finally {
-                                setLoading(false);
-                              }
-                            }}
+                              setError("Failed to update stage");
+                            } finally {
+                              setLoading(false);
+                            }
+                          }}
                             className="w-full px-3 py-2 border border-gray-200 rounded-xl bg-gray-50 hover:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent font-medium text-gray-700 transition-colors"
-                            disabled={loading}
-                          >
-                            {STAGE_OPTIONS.map(opt => <option key={opt} value={opt}>{opt}</option>)}
-                          </select>
-                        ) : (
+                          disabled={loading}
+                        >
+                          {STAGE_OPTIONS.map(opt => <option key={opt} value={opt}>{opt}</option>)}
+                        </select>
+                      ) : (
                           <div className={`inline-flex items-center px-3 py-2 rounded-xl text-sm font-semibold border ${getStageColor(match.stage || 'New')}`}>
                             <div className="h-2 w-2 rounded-full bg-current mr-2"></div>
                             {match.stage || 'New'}
@@ -335,8 +335,8 @@ export default function Matches() {
                         </div>
                       </div>
                     </div>
-                  );
-                })}
+                );
+              })}
               </div>
             </>
           )}
@@ -355,7 +355,7 @@ export default function Matches() {
       </div>
     </div>
   );
-}
+} 
 
 
 
