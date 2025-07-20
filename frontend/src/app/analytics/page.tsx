@@ -92,7 +92,7 @@ export default function SponsorAnalytics() {
       legend: {
         position: 'bottom' as const,
         labels: {
-          font: { size: 13, family: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif", weight: 'bold' },
+          font: { size: 13, family: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif", weight: 700 },
           color: '#374151',
           padding: 20,
           usePointStyle: true,
@@ -109,8 +109,8 @@ export default function SponsorAnalytics() {
         borderWidth: 1,
         cornerRadius: 8,
         padding: 12,
-        titleFont: { size: 14, weight: 'bold' },
-        bodyFont: { size: 13, weight: 'bold' },
+        titleFont: { size: 14, weight: 700 },
+        bodyFont: { size: 13, weight: 700 },
         displayColors: true,
         boxPadding: 6,
         caretSize: 6,
