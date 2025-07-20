@@ -333,56 +333,43 @@ export default function Home() {
             </p>
           </div>
           
-          {/* Enhanced action words section - directly on page */}
-          <div className="relative group mb-8">
-            <div className="flex flex-wrap items-center justify-center gap-4 mb-6">
-              {/* Discover */}
-              <div className="group/discover relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full blur-lg opacity-40 group-hover/discover:opacity-70 transition-all duration-300 animate-pulse"></div>
-                <div className="relative px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full text-white font-black text-lg sm:text-xl shadow-lg group-hover/discover:shadow-xl group-hover/discover:scale-110 transition-all duration-300">
-                  <span className="relative z-10 flex items-center gap-2">
-                    {/* <div className="w-2 h-2 bg-white rounded-full animate-bounce"></div> */}
+          {/* Revolutionary action words section - always horizontal, scrollable on mobile */}
+          <div className="relative group mb-8 sm:mb-12">
+            <div className="flex flex-row items-center justify-center gap-1 sm:gap-6 mb-6 sm:mb-8 w-full overflow-x-auto whitespace-nowrap no-scrollbar py-2">
+              {/* Discover - Enhanced */}
+              <div className="group/discover relative min-w-[120px] max-w-xs mx-1 flex items-center justify-center">
+                <div className="relative w-full flex items-center justify-center">
+                  <div className="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full text-white font-black text-base sm:text-xl shadow-lg flex items-center justify-center">
                     Discover
-                    {/* <div className="w-2 h-2 bg-white rounded-full animate-bounce" style={{animationDelay: '0.5s'}}></div> */}
-                  </span>
+                  </div>
                 </div>
               </div>
-
-              {/* Animated connector */}
-              <div className="flex items-center gap-1">
-                <div className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-pulse"></div>
-                <div className="w-4 h-0.5 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-pulse" style={{animationDelay: '0.2s'}}></div>
-                <div className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-pulse" style={{animationDelay: '0.4s'}}></div>
+              {/* Connector - always visible */}
+              <div className="flex items-center gap-1 min-w-[40px] mx-1">
+                <div className="w-2 h-2 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full animate-pulse shadow-lg"></div>
+                <div className="w-4 sm:w-8 h-1 bg-gradient-to-r from-purple-400 via-pink-400 to-rose-400 rounded-full animate-pulse shadow-md" style={{animationDelay: '0.3s'}}></div>
+                <div className="w-2 h-2 bg-gradient-to-br from-pink-400 to-rose-500 rounded-full animate-pulse shadow-lg" style={{animationDelay: '0.6s'}}></div>
               </div>
-
-              {/* Match */}
-              <div className="group/match relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full blur-lg opacity-40 group-hover/match:opacity-70 transition-all duration-300 animate-pulse" style={{animationDelay: '0.5s'}}></div>
-                <div className="relative px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full text-white font-black text-lg sm:text-xl shadow-lg group-hover/match:shadow-xl group-hover/match:scale-110 transition-all duration-300">
-                  <span className="relative z-10 flex items-center gap-2">
-                    {/* <SparklesIcon className="h-4 w-4 animate-spin" style={{animationDuration: '3s'}} /> */}
+              {/* Match - Enhanced */}
+              <div className="group/match relative min-w-[120px] max-w-xs mx-1 flex items-center justify-center">
+                <div className="relative w-full flex items-center justify-center">
+                  <div className="px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full text-white font-black text-base sm:text-xl shadow-lg flex items-center justify-center">
                     Match
-                    {/* <SparklesIcon className="h-4 w-4 animate-spin" style={{animationDuration: '3s', animationDelay: '1.5s'}} /> */}
-                  </span>
+                  </div>
                 </div>
               </div>
-
-              {/* Animated connector */}
-              <div className="flex items-center gap-1">
-                <div className="w-2 h-2 bg-gradient-to-r from-pink-400 to-indigo-400 rounded-full animate-pulse" style={{animationDelay: '0.6s'}}></div>
-                <div className="w-4 h-0.5 bg-gradient-to-r from-pink-400 to-indigo-400 rounded-full animate-pulse" style={{animationDelay: '0.8s'}}></div>
-                <div className="w-2 h-2 bg-gradient-to-r from-pink-400 to-indigo-400 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
+              {/* Connector - always visible */}
+              <div className="flex items-center gap-1 min-w-[40px] mx-1">
+                <div className="w-2 h-2 bg-gradient-to-br from-pink-400 to-indigo-500 rounded-full animate-pulse shadow-lg" style={{animationDelay: '0.8s'}}></div>
+                <div className="w-4 sm:w-8 h-1 bg-gradient-to-r from-pink-400 via-indigo-400 to-violet-400 rounded-full animate-pulse shadow-md" style={{animationDelay: '1.1s'}}></div>
+                <div className="w-2 h-2 bg-gradient-to-br from-indigo-400 to-violet-500 rounded-full animate-pulse shadow-lg" style={{animationDelay: '1.4s'}}></div>
               </div>
-
-              {/* Collaborate */}
-              <div className="group/collaborate relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-indigo-400 to-violet-400 rounded-full blur-lg opacity-40 group-hover/collaborate:opacity-70 transition-all duration-300 animate-pulse" style={{animationDelay: '1s'}}></div>
-                <div className="relative px-6 py-3 bg-gradient-to-r from-indigo-500 to-violet-500 rounded-full text-white font-black text-lg sm:text-xl shadow-lg group-hover/collaborate:shadow-xl group-hover/collaborate:scale-110 transition-all duration-300">
-                  <span className="relative z-10 flex items-center gap-2">
-                    {/* <div className="w-2 h-2 bg-white rounded-full animate-bounce" style={{animationDelay: '0.8s'}}></div> */}
+              {/* Collaborate - Enhanced */}
+              <div className="group/collaborate relative min-w-[120px] max-w-xs mx-1 flex items-center justify-center">
+                <div className="relative w-full flex items-center justify-center">
+                  <div className="px-6 py-3 bg-gradient-to-r from-indigo-500 to-violet-500 rounded-full text-white font-black text-base sm:text-xl shadow-lg flex items-center justify-center">
                     Collaborate
-                    {/* <div className="w-2 h-2 bg-white rounded-full animate-bounce" style={{animationDelay: '1.3s'}}></div> */}
-                  </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -404,19 +391,20 @@ export default function Home() {
             className="group relative px-10 py-4 rounded-2xl bg-gradient-to-r from-blue-500 via-blue-600 to-indigo-600 text-white font-bold text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <span className="relative flex items-center gap-2">
+            <span className="relative flex items-center justify-center gap-2">
               Get Started
               <SparklesIcon className="h-6 w-6 animate-spin" style={{animationDuration: '3s', animationDelay: '1.5s'}} />
             </span>
           </Link>
           <Link 
             href="/login" 
-            className="group px-10 py-4 rounded-2xl border-2 border-slate-300 bg-white/80 backdrop-blur-sm text-slate-700 font-bold text-lg hover:border-blue-400 hover:bg-blue-50/80 hover:text-blue-700 transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="group relative px-8 sm:px-12 py-4 sm:py-5 rounded-full bg-white text-blue-700 font-bold text-lg sm:text-xl shadow border border-blue-200 hover:bg-blue-50 hover:border-blue-300 transition-all duration-200 flex items-center justify-center gap-3 overflow-hidden focus:outline-none focus:ring-4 focus:ring-blue-100/40"
           >
-            <span className="flex items-center gap-2">
-              
+            <span className="relative flex items-center justify-center gap-2 sm:gap-3 tracking-wide">
               Login
-              <div className="w-2 h-2 rounded-full bg-blue-500 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+              <svg className="w-5 h-5 sm:w-6 sm:h-6 ml-1 group-hover:translate-x-1 transition-transform duration-200 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
             </span>
           </Link>
         </div>
