@@ -175,9 +175,8 @@ You can use these demo accounts for instant access and testing:
 
 ## 📄 Documentation
 
-- **Code documentation generated with Entelligence AI extension**
-- [View full code documentation here](#) <!-- Replace with your Entelligence AI doc link -->
-
+**Code documentation generated with Entelligence AI extension**
+- [View full code documentation (Entelligence AI)](https://www.entelligence.ai/documentation/divyasai2004%26eventeye/8f685946-77ad-4fea-a118-9c67981604a8?type=TECH_DOCS)
 ---
 
 ##  Contact
