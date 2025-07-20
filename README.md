@@ -25,13 +25,6 @@
 
 ---
 
-## 📸 Screenshots
-
-| Home Page | Matching & Filters | Messaging | Analytics |
-|-----------|-------------------|-----------|-----------|
-| ![Home](https://eventeye-rouge.vercel.app/screenshot-home.png) | ![Filters](https://eventeye-rouge.vercel.app/screenshot-filters.png) | ![Messages](https://eventeye-rouge.vercel.app/screenshot-messages.png) | ![Analytics](https://eventeye-rouge.vercel.app/screenshot-analytics.png) |
-
----
 
 ## 🧩 Features
 
