@@ -133,7 +133,7 @@ export default function SponsorAnalytics() {
         grid: { display: false },
         ticks: {
           color: '#6B7280',
-          font: { size: 12, family: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif", weight: '500' },
+          font: { size: 12, family: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif", weight: 500 },
           padding: 8
         },
         border: {
@@ -148,7 +148,7 @@ export default function SponsorAnalytics() {
         },
         ticks: {
           color: '#6B7280',
-          font: { size: 12, family: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif", weight: '500' },
+          font: { size: 12, family: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif", weight: 500},
           padding: 8
         },
         border: {
