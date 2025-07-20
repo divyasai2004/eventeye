@@ -16,7 +16,6 @@
 - **Smart matching** with match percentage, analytics, and AI-powered proposal generation
 - **Modern, responsive UI/UX** for both mobile and desktop
 
----
 
 ## 🌟 Live Demo
 
