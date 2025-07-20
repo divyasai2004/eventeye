@@ -62,7 +62,7 @@ cd eventeye/event1
 
 ### 2. Setup Environment Variables
 
-| 🔧 Location                      | Variable Name         | Value / Description           |
+|   Location                      | Variable Name         | Value / Description           |
 |----------------------------------|------------------------|-------------------------------|
 | `event1/backend/.env`           | `MONGO_URI`           | your_mongodb_uri              |
 |                                  | `JWT_SECRET`          | your_jwt_secret               |
@@ -102,19 +102,33 @@ npm run dev
 
 You can use these demo accounts for instant access and testing:
 
-### Student Club
-- Email: techclub1@example.com
-- Password: Tech@1234
+### Student Club Demo Accounts
 
-### Sponsor
-- Email: technova@example.com
-- Password: Tech@1234
+| No. | Club Name        | Email                      | Password     |
+|-----|------------------|-----------------------------|--------------|
+| 1   | Finance Club     | financeclub1@example.com    | Finance@1234 |
+| 2   | Education Club   | educlub1@example.com        | Edu@1234     |
+| 3   | Health Club      | healthclub1@example.com     | Health@1234  |
+| 4   | Retail Club      | retailclub1@example.com     | Retail@1234  |
+| 5   | Tech Club        | techclub1@example.com       | Tech@1234    |
 
-*(See README for more demo accounts and profiles!)*
+---
+
+### Sponsor Demo Accounts
+
+| No. | Sponsor Name     | Industry     | Email                    | Password     |
+|-----|------------------|--------------|---------------------------|--------------|
+| 1   | FinEdge          | Finance      | finedge@example.com       | Finance@1234 |
+| 2   | EduWorld         | Education    | eduworld@example.com      | Edu@1234     |
+| 3   | HealthPlus       | Healthcare   | healthplus@example.com    | Health@1234  |
+| 4   | ShopSmart        | Retail       | shopsmart@example.com     | Retail@1234  |
+| 5   | Technova         | Tech         | technova@example.com      | Tech@1234    |
 
 ---
 
 ## 🔹 How It Works
+
+> A simple 6-step journey to smart event sponsorship ...!
 
 1. **Register** as a Student Club or Sponsor
 2. **Complete your profile** with detailed event or sponsor info
