@@ -17,13 +17,17 @@
 - **Modern, responsive UI/UX** for both mobile and desktop
 
 
-## 🌟 Live Demo
+## 🌟 Live
 
   [https://eventeye-rouge.vercel.app/](https://eventeye-rouge.vercel.app/)
 
 
----
+## 🌟 Demo Video URl
+Check out the full demo video of **SponsorSync** in action:
 
+ [Watch on YouTube](https://youtu.be/muOvq9NSCVE)
+
+---
 
 ## 🔹 Features
 
@@ -186,7 +190,7 @@ For questions, feedback, or inquiries:
 
 ---
 
-**Good luck, and thank you for checking out SponsorSync! ☺️**
+**Thank you for checking out SponsorSync! ☺️**
 
 
 > _“Where student events meet their perfect sponsors.”_
