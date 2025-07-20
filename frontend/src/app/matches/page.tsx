@@ -225,7 +225,7 @@ export default function Matches() {
               <h3 className="text-xl font-semibold text-gray-800 mb-2">No matches found</h3>
               <p className="text-gray-600 max-w-md leading-relaxed">
                 Try adjusting your filters or check back later for new opportunities. 
-                We're constantly working to find the perfect matches for you!
+                We&apos;re constantly working to find the perfect matches for you!
               </p>
               {(industry !== "All" || audience !== "All") && (
                 <button 
