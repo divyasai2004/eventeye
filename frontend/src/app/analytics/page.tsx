@@ -34,18 +34,15 @@ export default function SponsorAnalytics() {
   }
 
   if (!data) return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+    <div className="min-h-screen bg-white flex items-center justify-center">
       <div className="flex flex-col items-center space-y-4">
-        <div className="relative">
-          <div className="w-12 h-12 border-3 border-gray-200 border-t-blue-500 rounded-full animate-spin"></div>
+        <div className="flex space-x-2">
+          <div className="w-3 h-3 rounded-full bg-blue-500 animate-bounce" style={{ animationDelay: '0s' }}></div>
+          <div className="w-3 h-3 rounded-full bg-purple-500 animate-bounce" style={{ animationDelay: '0.15s' }}></div>
+          <div className="w-3 h-3 rounded-full bg-pink-500 animate-bounce" style={{ animationDelay: '0.3s' }}></div>
         </div>
         <div className="text-center">
-          <h3 className="text-xl font-semibold text-gray-700 mb-2">Loading Analytics</h3>
-          <div className="flex space-x-1 justify-center">
-            <div className="w-2 h-2 bg-blue-400 rounded-full animate-bounce"></div>
-            <div className="w-2 h-2 bg-blue-400 rounded-full animate-bounce" style={{animationDelay: '0.1s'}}></div>
-            <div className="w-2 h-2 bg-blue-400 rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
-          </div>
+          <h3 className="text-xl font-semibold text-gray-700 mb-2">Loading Analytics...</h3>
         </div>
       </div>
     </div>
