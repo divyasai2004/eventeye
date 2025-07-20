@@ -12,13 +12,26 @@ require('./models/MessageThread');
 dotenv.config();
 
 const app = express();
-app.use(cors({
-  origin: [
-    "https://eventeye-rouge.vercel.app",
-    "http://localhost:3000"
-  ],
-  credentials: true
-}));
+// --- CORS CONFIGURATION FOR FRONTEND DEPLOYMENT AND LOCALHOST ---
+const allowedOrigins = [
+  'https://eventeye-rouge.vercel.app',
+  'http://localhost:3000',
+  'https://localhost:3000'
+];
+app.use(
+  require('cors')({
+    origin: function (origin, callback) {
+      // Allow requests with no origin (like mobile apps or curl requests)
+      if (!origin) return callback(null, true);
+      if (allowedOrigins.indexOf(origin) !== -1) {
+        return callback(null, true);
+      } else {
+        return callback(new Error('Not allowed by CORS'));
+      }
+    },
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 // Add auth routes
