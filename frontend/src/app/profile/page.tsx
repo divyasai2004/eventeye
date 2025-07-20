@@ -55,7 +55,7 @@ export default function Profile() {
     setRole(userRole || "");
     setEmail(userEmail || "");
     setLoading(true);
-    fetch("http://localhost:5000/api/profile/me", {
+    fetch("https://eventeye.onrender.com/api/profile/me", {
       headers: { Authorization: `Bearer ${token}` },
     })
       .then(res => res.json())
@@ -84,7 +84,7 @@ export default function Profile() {
     setSuccess("");
     const token = localStorage.getItem("token");
     try {
-      const res = await fetch("http://localhost:5000/api/profile/me", {
+      const res = await fetch("https://eventeye.onrender.com/api/profile/me", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -244,7 +244,7 @@ export default function Profile() {
             <div className="mt-8 pt-6 border-t border-slate-200/60">
               <button
                 onClick={async () => {
-                  const res = await fetch('http://localhost:5000/api/profile/generate-proposal', {
+                  const res = await fetch('https://eventeye.onrender.com/api/profile/generate-proposal', {
                     method: 'POST',
                     headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
                   });

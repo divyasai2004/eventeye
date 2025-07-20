@@ -14,7 +14,7 @@ export default function SponsorAnalytics() {
   const [role, setRole] = useState<string | null>(null);
   useEffect(() => {
     setRole(localStorage.getItem("userRole"));
-    fetch("http://localhost:5000/api/matches/analytics", {
+    fetch("https://eventeye.onrender.com/api/matches/analytics", {
       headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
     })
       .then(res => res.json()).then(setData);

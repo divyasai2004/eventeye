@@ -49,7 +49,7 @@ export default function Messages() {
     setRole(userRole || "");
     setEmail(userEmail || "");
     setLoading(true);
-    fetch("http://localhost:5000/api/messages", {
+    fetch("https://eventeye.onrender.com/api/messages", {
       headers: { Authorization: `Bearer ${token}` },
     })
       .then(res => res.json())
@@ -71,7 +71,7 @@ export default function Messages() {
     setFile(null);
     const token = localStorage.getItem("token");
     try {
-      const res = await fetch(`http://localhost:5000/api/messages/${thread._id}`, {
+      const res = await fetch(`https://eventeye.onrender.com/api/messages/${thread._id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();
@@ -97,7 +97,7 @@ export default function Messages() {
       if (startingNew) {
         formData.append("recipientEmail", recipientEmail);
       }
-      const res = await fetch("http://localhost:5000/api/messages", {
+      const res = await fetch("https://eventeye.onrender.com/api/messages", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -137,7 +137,7 @@ export default function Messages() {
     setSuccess("");
     const token = localStorage.getItem("token");
     try {
-      const resUser = await fetch(`http://localhost:5000/api/users/by-email/${recipientEmail}`, {
+      const resUser = await fetch(`https://eventeye.onrender.com/api/users/by-email/${recipientEmail}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       const userData = await resUser.json();
@@ -147,7 +147,7 @@ export default function Messages() {
       formData.append("recipientId", recipientId);
       formData.append("message", newMessage);
       if (file) formData.append("file", file);
-      const res = await fetch("http://localhost:5000/api/messages", {
+      const res = await fetch("https://eventeye.onrender.com/api/messages", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -181,7 +181,7 @@ export default function Messages() {
     if (!window.confirm("Are you sure you want to delete this message?")) return;
     const token = localStorage.getItem("token");
     try {
-      const res = await fetch(`http://localhost:5000/api/messages/${selectedThread._id}/${messageId}`, {
+      const res = await fetch(`https://eventeye.onrender.com/api/messages/${selectedThread._id}/${messageId}`, {
         method: "DELETE",
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -389,7 +389,7 @@ export default function Messages() {
                             {msg.text && <div className="text-sm leading-relaxed">{msg.text}</div>}
                             {msg.fileUrl && (
                               <a 
-                                href={`http://localhost:5000${msg.fileUrl}`} 
+                                href={`https://eventeye.onrender.com${msg.fileUrl}`} 
                                 target="_blank" 
                                 rel="noopener noreferrer" 
                                 className={`flex items-center gap-2 mt-2 p-2 rounded-lg transition-colors ${

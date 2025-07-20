@@ -45,7 +45,7 @@ export default function Matches() {
     if (industry !== "All") params.push(`industry=${encodeURIComponent(industry)}`);
     if (audience !== "All") params.push(`audience=${encodeURIComponent(audience)}`);
     const query = params.length ? `?${params.join("&")}` : "";
-    fetch(`http://localhost:5000/api/matches${query}`, {
+    fetch(`https://eventeye.onrender.com/api/matches${query}`, {
       headers: { Authorization: `Bearer ${token}` },
     })
       .then(res => res.json())
@@ -67,7 +67,7 @@ export default function Matches() {
     setError("");
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch("http://localhost:5000/api/matches/dummy", {
+      const res = await fetch("https://eventeye.onrender.com/api/matches/dummy", {
         method: "POST",
         headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
       });
@@ -294,7 +294,7 @@ export default function Matches() {
                               setError("");
                               try {
                                 const token = localStorage.getItem("token");
-                                const res = await fetch(`http://localhost:5000/api/matches/${match._id}/stage`, {
+                                const res = await fetch(`https://eventeye.onrender.com/api/matches/${match._id}/stage`, {
                                   method: "PATCH",
                                   headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
                                   body: JSON.stringify({ stage: newStage })

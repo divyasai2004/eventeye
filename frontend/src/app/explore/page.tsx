@@ -26,7 +26,7 @@ export default function ExploreClubs() {
   useEffect(() => {
     const token = localStorage.getItem("token");
     // Removed role check so both sponsors and student clubs can access
-    fetch("http://localhost:5000/api/profile/clubs", {
+    fetch("https://eventeye.onrender.com/api/profile/clubs", {
       headers: { Authorization: `Bearer ${token}` },
     })
       .then(res => res.json())
