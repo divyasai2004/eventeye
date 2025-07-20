@@ -188,7 +188,7 @@ For questions, feedback, or inquiries:
 
 ---
 
-**Good luck, and thank you for checking out SponsorSync! 🚀**
+**Good luck, and thank you for checking out SponsorSync! ☺️**
 
 
 > _“Where student events meet their perfect sponsors.”_
