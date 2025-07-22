@@ -5,8 +5,21 @@
   <img src="https://github.com/divyasai2004/eventeye/blob/main/assets/screenshot-home2.png?raw=true" width="45%" />
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/license-MIT-green" />
+  <img src="https://img.shields.io/badge/Next.js-%23121011.svg?style=flat&logo=nextdotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=flat&logo=mongodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/OpenAI-Powered-blueviolet" />
+</p>
 
+---
 
+## 🌟 Try SponsorSync
+
+ **Live App:** [eventeye-rouge.vercel.app](https://eventeye-rouge.vercel.app/)  
+ **Demo Video:** [Watch on YouTube](https://youtu.be/muOvq9NSCVE)
+
+---
 ## Overview
 
 **SponsorSync** is a smart matchmaking platform that connects student clubs with the perfect sponsors for their events. Built for the EventEye Hackathon, SponsorSync solves the real-world problem of student organizers struggling to find the right sponsors, and sponsors failing to discover high-engagement student events.
@@ -16,19 +29,7 @@
 - **Smart matching** with match percentage, analytics, and AI-powered proposal generation
 - **Modern, responsive UI/UX** for both mobile and desktop
 
-
-## 🌟 Live
-
-  [https://eventeye-rouge.vercel.app/](https://eventeye-rouge.vercel.app/)
-
-
-## 🌟 Demo Video URl
-Check out the full demo video of **SponsorSync** in action:
-
- [Watch on YouTube](https://youtu.be/muOvq9NSCVE)
-
 ---
-
 ## 🔹 Features
 
 - **Student Club & Sponsor Registration**
