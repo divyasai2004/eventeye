@@ -16,8 +16,8 @@
 
 ## 🌟 Try SponsorSync
 
- **Live App:** [eventeye-rouge.vercel.app](https://eventeye-rouge.vercel.app/)  
- **Demo Video:** [Watch on YouTube](https://youtu.be/muOvq9NSCVE)
+ **Live App →** [eventeye-rouge.vercel.app](https://eventeye-rouge.vercel.app/)  
+ **Demo Video →** [Watch on YouTube](https://youtu.be/muOvq9NSCVE)
 
 ---
 ## Overview
@@ -132,7 +132,7 @@ You can use these demo accounts for instant access and testing:
 
 ## 🔹 How It Works
 
-> A simple 6-step journey to smart event sponsorship ...!
+> A simple 7-step journey to smart event sponsorship!
 
 1. **Register** as a Student Club or Sponsor
 2. **Complete your profile** with detailed event or sponsor info
